@@ -1,2 +1,2 @@
-# CSC340-SFSU
+# Programming Methodology
 Programming Methodology
