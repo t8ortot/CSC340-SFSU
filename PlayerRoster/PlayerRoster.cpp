@@ -9,6 +9,20 @@
 using namespace std;
 
 /**
+* Prints out current roster.
+* @param j Vector for jersey numbers
+* @param p Vector for player ratings
+*/
+void Roster(vector<int> j, vector<int> p) {
+    //prints current roster
+    cout << "ROSTER" << endl;
+    for (int unsigned i = 0; i < j.size(); i++) {
+        cout << "Player " << i + 1 << " -- Jersey number: " << j[i] << ", Rating: " << p[i] << endl;
+    }
+    cout << endl;
+}
+
+/**
 * Prompts the user for five players' information and then prints updated roster.
 * @param j The vector to store jersey numbers
 * @param p The vector to store player ratings
@@ -43,25 +57,7 @@ void GetPlayerInfo(vector<int> &j, vector<int> &p) {
     }
 
     //prints out updated roster
-    cout << "ROSTER" << endl;
-    for (int i = 0; i < 5; i++) {
-        cout << "Player " << i + 1 << " -- Jersey number: " << j[i] << ", Rating: " << p[i] << endl;
-    }
-    cout << endl;
-}
-
-/**
-* Prints out current roster.
-* @param j Vector for jersey numbers
-* @param p Vector for player ratings
-*/
-void Roster(vector<int> j, vector<int> p) {
-    //prints current roster
-    cout << "ROSTER" << endl;
-    for (int unsigned i = 0; i < j.size(); i++) {
-        cout << "Player " << i + 1 << " -- Jersey number: " << j[i] << ", Rating: " << p[i] << endl;
-    }
-    cout << endl;
+    Roster(j, p);
 }
 
 /**
