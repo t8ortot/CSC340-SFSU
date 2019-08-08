@@ -5,7 +5,7 @@ A program that has all the functions required to create, sort, mutate, and delet
 Learned header files, pointers, memory allocation, dereferencing.
 
 How to run (assuming in DynamicArray directory):
-- g++ main.cpp
+- g++ main.cpp dynamicArray.cpp
 - ./a.out
 
 How to use:
